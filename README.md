@@ -1,5 +1,5 @@
 # PyQuake
-PyQuake is a program that utilizes matplotlib and pandas to access the USGS spreadsheets and visualize earthquake data. Unfortunately, the current version (1.0) does not have the ability to filter data or display heatmaps, frequency charts, line graphs, or time and depth visualizations. Despite these limitations, PyQuake provides users with basic earthquake data analysis and visualizations using Python.
+PyQuake is a program that utilizes matplotlib and pandas to access the USGS spreadsheets and visualize earthquake data. Unfortunately, it is still in version 1.0. But, PyQuake provides users with basic earthquake data analysis and visualizations using Python.
 
 If you wanna run PyQuake, follow these steps:
 

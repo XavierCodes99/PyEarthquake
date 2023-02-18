@@ -3,9 +3,10 @@ PyQuake is a program that utilizes matplotlib and pandas to access the USGS spre
 
 If you wanna run PyQuake, follow these steps:
 
-1. Download the PyQuake program files and save them to your computer.
-2. Open the PyQuake program folder.
-3. Locate the run.bat file and double-click on it.
+1. Click the **Code** button then press **Download ZIP**
+2. Open the ZIP file
+3. Extract the folder to the Desktop
+4. Locate the run.bat file and double-click on it.
 
 Then, the command prompt will open and PyQuake will begin running.
 

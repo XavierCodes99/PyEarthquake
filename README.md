@@ -1,15 +1,6 @@
 # PyQuake
 PyQuake is a program that utilizes matplotlib and pandas to access the USGS spreadsheets and visualize earthquake data. Unfortunately, it is still in version 1.0. But, PyQuake provides users with basic earthquake data analysis and visualizations using Python.
 
-If you wanna run PyQuake, follow these steps:
-
-1. Click the **Code** button then press **Download ZIP**
-2. Open the ZIP file
-3. Extract the folder to the Desktop
-4. Locate the run.bat file and double-click on it.
-
-Then, the command prompt will open and PyQuake will begin running.
-
 **Note:** If you do not have Python installed, follow these steps:
 
 1. Download the latest version of Python from the official website at https://www.python.org/downloads/.
@@ -23,4 +14,11 @@ Then, the command prompt will open and PyQuake will begin running.
  `pip install pandas`
 6. Press Enter to execute the command. Pandas will now be installed.
 
-If you've done these steps already, then congrats! You can now run PyQuake.
+If you wanna run PyQuake, follow these steps:
+
+1. Click the **Code** button then press **Download ZIP**
+2. Open the ZIP file
+3. Extract the folder to the Desktop
+4. Locate the run.bat file and double-click on it.
+
+Then, the command prompt will open and PyQuake will begin running.

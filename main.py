@@ -4,6 +4,10 @@ import numpy as np
 from mpl_toolkits.basemap import Basemap
 from matplotlib.animation import FuncAnimation
 from matplotlib.colors import ListedColormap
+import pyttsx3
+import datetime
+
+engine = pyttsx3.init()
 
 # Define the colormap
 colormap = ListedColormap(['#ccc', '#0ff', '#00f', '#0f0', '#af0', '#ff0', '#fa0', '#f00', '#a00', '#a0f'])
@@ -18,7 +22,7 @@ m.drawcoastlines()
 m.drawcountries()
 
 # Initialize the scatter plot
-sc = ax.scatter([], [], [], alpha=0.75, cmap=colormap, edgecolor='black', zorder=2, marker="*")
+sc = ax.scatter([], [], [], alpha=1, cmap=colormap, edgecolor='black', zorder=2, marker="*")
 
 # Add a colorbar
 cbar = plt.colorbar(sc, label='Magnitude')
@@ -51,6 +55,23 @@ def update_plot(i):
     sc.set_clim(vmin=0, vmax=10)
     
     fig.canvas.manager.set_window_title('PyQuake')
+    
+        # Check if a new earthquake has occurred
+    if len(df) > len(lat):
+        # Get the latest earthquake data
+        latest = df.iloc[-1]
+        mag = latest['mag']
+        place = latest['place']
+        time = latest['time']
+        
+        date_obj = datetime.strptime(str(time), '%Y-%m-%dT%H:%M:%S.%fZ')
+        
+        newtime = date_obj.strftime('%H:%M %p')
+        
+        # Speak the earthquake information
+        text = f"An earthquake with a magnitude of {mag} has occured in {place} at {newtime}"
+        engine.say(text)
+        engine.runAndWait()
 
 # Animate the plot
 ani = FuncAnimation(fig, update_plot, interval=1000)

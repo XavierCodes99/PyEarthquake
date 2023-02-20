@@ -1,5 +1,5 @@
 # PyEarthquake
-PyEarthquake is a program that utilizes matplotlib and pandas to access the USGS spreadsheets and visualize earthquake data. Update version 1.0.1 of PyEarthquake includes the new text-to-speech functionality that enables the program to audibly communicate earthquake data to users. With this new feature, users can listen to the earthquake data and get real-time updates on seismic activity. This update aims to improve the accessibility of PyQuake for visually impaired users and those who prefer audio output.
+PyEarthquake is a program that utilizes matplotlib, pyttsx3 and pandas to access the USGS spreadsheets and visualize earthquake data.
 
 ![pyearthquake](https://user-images.githubusercontent.com/88925152/219908589-26d0d69d-9bed-4c78-a67e-84467369d3db.png)
 

@@ -54,7 +54,7 @@ def update_plot(i):
     sc.set_sizes(np.exp(mag) / 3)
     sc.set_clim(vmin=0, vmax=10)
     
-    fig.canvas.manager.set_window_title('PyQuake')
+    fig.canvas.manager.set_window_title('PyEarthquake')
     
         # Check if a new earthquake has occurred
     if len(df) > len(lat):

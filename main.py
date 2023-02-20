@@ -16,7 +16,7 @@ colormap = ListedColormap(['#ccc', '#0ff', '#00f', '#0f0', '#af0', '#ff0', '#fa0
 fig = plt.figure(figsize=(10, 7))
 ax = fig.add_subplot(111)
 
-m = Basemap(projection='merc', llcrnrlon=-180, llcrnrlat=-80, urcrnrlon=180, urcrnrlat=80, resolution='l')
+m = Basemap(projection='merc', llcrnrlon=-180, llcrnrlat=-80, urcrnrlon=180, urcrnrlat=80, resolution='i')
 
 m.drawcoastlines()
 m.drawcountries()
@@ -54,7 +54,7 @@ def update_plot(i):
     sc.set_sizes(np.exp(mag) / 3)
     sc.set_clim(vmin=0, vmax=10)
     
-    fig.canvas.manager.set_window_title('PyEarthquake')
+    fig.canvas.manager.set_window_title('PyQuake')
     
         # Check if a new earthquake has occurred
     if len(df) > len(lat):

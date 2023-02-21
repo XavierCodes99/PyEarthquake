@@ -10,7 +10,7 @@ import datetime
 engine = pyttsx3.init()
 
 # Define the colormap
-colormap = ListedColormap(['#ccc', '#0ff', '#00f', '#0f0', '#af0', '#ff0', '#fa0', '#f00', '#a00', '#a0f'])
+colormap = ListedColormap(['#ccc', '#0ff', '#00f', '#0f0', '#af0', '#ff0', '#fa0', '#f00', '#a00', '#d0f'])
 
 # Initialize the plot
 fig = plt.figure(figsize=(10, 7))
@@ -20,6 +20,8 @@ m = Basemap(projection='merc', llcrnrlon=-180, llcrnrlat=-80, urcrnrlon=180, urc
 
 m.drawcoastlines()
 m.drawcountries()
+m.drawmapboundary(fill_color='#aff')
+m.fillcontinents(color='#eee')
 
 # Initialize the scatter plot
 sc = ax.scatter([], [], [], alpha=1, cmap=colormap, edgecolor='black', zorder=2)
@@ -52,7 +54,7 @@ def update_plot(i):
     sc.set_array(mag)
     sc.set_cmap(colormap)
     sc.set_sizes(np.exp(mag) / 3)
-    sc.set_clim(vmin=0, vmax=10)
+    sc.set_clim(vmin=0, vmax=9)
     
     fig.canvas.manager.set_window_title('PyEarthquake')
     

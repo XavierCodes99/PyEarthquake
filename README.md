@@ -18,9 +18,6 @@ PyEarthquake is a program that utilizes matplotlib, pyttsx3 and pandas to access
 7. Third, type the following command to install pyttsx3: (Note this is important for the tts to work)
  `pip install pyttsx3`
 8. Press Enter to execute the command. Now pyttsx3 will now be installed.
-9. Fourth, type the following command to install datetime:
- `pip install datetime`
-10. Press Enter to execute the command. Now datetime will now be installed.
 
 If you wanna run PyEarthquake, follow these steps:
 

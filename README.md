@@ -1,5 +1,5 @@
 # PyEarthquake
-PyEarthquake is a program that utilizes matplotlib, pyttsx3 and pandas to access the USGS spreadsheets and visualize earthquake data.
+PyEarthquake is a program that utilizes matplotlib, pyttsx3 and pandas to visualize earthquake data.
 
 ![pyearthquake](https://user-images.githubusercontent.com/88925152/219908589-26d0d69d-9bed-4c78-a67e-84467369d3db.png)
 

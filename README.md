@@ -14,10 +14,7 @@ PyEarthquake is a program that utilizes matplotlib, pyttsx3 and pandas to visual
 4. Press Enter to execute the command. Matplotlib will now be installed.
 5. Second, type the following command to install pandas:
  `pip install pandas`
-6. Press Enter to execute the command. Pandas will now be installed.
-7. Third, type the following command to install pyttsx3: (Note this is important for the tts to work)
- `pip install pyttsx3`
-8. Press Enter to execute the command. Now pyttsx3 will now be installed.
+6. Press Enter to execute the command. Then, pandas will now be installed.
 
 If you wanna run PyEarthquake, follow these steps:
 
